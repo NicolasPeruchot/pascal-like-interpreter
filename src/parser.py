@@ -32,40 +32,15 @@ pg = rply.ParserGenerator(
         "SEMI",
     ],
     precedence=[
-        (
-            "left",
-            [
-                "WHILE",
-            ],
-        ),
-        (
-            "left",
-            [
-                "EQUAL",
-            ],
-        ),
-        (
-            "right",
-            [
-                "ELSE",
-            ],
-        ),
-        (
-            "left",
-            [
-                "SEMI",
-            ],
-        ),
+        ("left", ["WHILE"]),
+        ("left", ["EQUAL"]),
+        ("right", ["ELSE"]),
+        ("left", ["SEMI"]),
         ("left", ["ASSIGN"]),
         ("left", ["PRINT"]),
         ("left", ["ADD", "MINUS"]),
         ("left", ["DIVIDE", "MULTIPLY"]),
-        (
-            "left",
-            [
-                "MOD",
-            ],
-        ),
+        ("left", ["MOD"]),
     ],
 )
 
