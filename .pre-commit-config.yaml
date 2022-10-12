@@ -42,11 +42,3 @@ repos:
     hooks:
       - id: forbid-tabs
         exclude: Makefile
-  - repo: local
-    hooks:
-      - id: test
-        name: run_test
-        language: python
-        entry: pytest
-        pass_filenames: false
-        stages: [commit]
